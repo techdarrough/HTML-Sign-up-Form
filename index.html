@@ -31,7 +31,13 @@
                 <label for="city">Your City</label>
                 <input type="text" name="city">
                 <label for="state">Your State</label>
-                <input type="drop" name="state">
+                <select name="state" id="state">
+                    <option value="NV">Nevada</option>
+                    <option value="AR">Arkanas</option>
+                    <option value="NY">New York</option>
+                    <option value="FL">Flordia</option>
+                    <option value="Tx">Texas</option>
+                </select>
                 <label for="zipCode">Your Zip Code</label>
                 <input type="text" name="zipCode">
             </fieldset>
@@ -40,18 +46,64 @@
 
             
                         <!-- TODO: Second fieldset -->
-            <!-- <fieldset>
-                <label for="perferredDesination">Your Perferred Desination</label>
-                <input type="radio" name="vegas" id="vegas" value="Las Vegas">
+            <fieldset>
+              <legend>
+                Your Preferences
+              </legend>
+              <h3>choose your facvorite location</h3>
+            <div>
+            
+                <input type="radio" id="Nevada" name="location" value="Nevada">
+                <label for="Nevada">Nevada</label>
 
-            </fieldset> -->
+                <input type="radio" id="Arkanas" name="location" value="Arkanas">
+                <label for="Arkanas">Arkanas</label>
+
+                <input type="radio" id="New York" name="location" value="New York">
+                <label for="New York">New York</label>
+
+                <input type="radio" id="Flordia" name="location" value="Flordia">
+                <label for="Flordia">Flordia</label>
+
+                <input type="radio" id="Texas" name="location" value="Texas">
+                <label for="Texas">Texas</label>
+
+               
+            </div>
+            </fieldset>
             
             
-            <!-- TODO: Radio buttons for selecting preferred destination -->
-            <!-- TODO: Color input for selecting favorite color -->
+            <div>
+                <label for="color">Favorite Color</label>
+                <input type="color" name="Favorite Color picker" id="color">
+            </div>
+
+          <div>
+
+          </div>
             <!-- TODO: Checkboxes for selecting extra add-ons -->
+             <div>
             
-            <!-- TODO: Submit Button -->
+                <input type="checkbox" id="sauna" name="sauna" value="sauna">
+                <label for="sauna">sauna access,</label>
+
+                <input type="checkbox" id="hottub" name="extras" value="hottub">
+                <label for="hottub">In Room hottub</label>
+
+                <input type="checkbox" id="Gym Access" name="Gym Access" value="Gym Access">
+                <label for="Gym acccess">Gym access</label>
+
+                <input type="checkbox" id="In Room Movie" name="extras" value="In Room Movie">
+                <label for="In room Movie">In Room Movie</label>
+
+                <input type="checkbox" id="CaliKing" name="King Size bed" value="King Size Bed">
+                <label for="King Size Bed">California King in Room </label>
+
+               
+            </div>
+            <div>
+                <input type="button" value="Submit">
+            </div>
         </form>
     </main>
     <footer>
